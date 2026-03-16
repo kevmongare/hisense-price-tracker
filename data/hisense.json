@@ -1,0 +1,19 @@
+{
+  "scraped_at": "2025-03-16T07:00:00+00:00",
+  "total": 14,
+  "jumia_count": 7,
+  "kilimall_count": 7,
+  "note": "Sample data — will be replaced by live scrape via GitHub Actions",
+  "listings": [
+    {"platform":"Jumia","name":"Hisense 32A4G HD Ready Smart TV","price_ksh":21999,"old_price_ksh":26999,"rating":4.3,"discount_pct":18.5,"is_best_deal":false,"screen_size":32,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":null},
+    {"platform":"Kilimall","name":"Hisense 32A4K Smart TV","price_ksh":18999,"old_price_ksh":22000,"rating":null,"discount_pct":13.6,"is_best_deal":false,"screen_size":32,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":null},
+    {"platform":"Jumia","name":"Hisense 43A5800FW FHD Android TV","price_ksh":34999,"old_price_ksh":42000,"rating":4.5,"discount_pct":16.7,"is_best_deal":false,"screen_size":43,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":null},
+    {"platform":"Kilimall","name":"Hisense 43E57KQ QLED 4K Google TV","price_ksh":38500,"old_price_ksh":44000,"rating":null,"discount_pct":12.5,"is_best_deal":false,"screen_size":43,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":null},
+    {"platform":"Jumia","name":"Hisense 55A7200F 4K UHD Smart TV","price_ksh":44999,"old_price_ksh":62500,"rating":4.6,"discount_pct":28.0,"is_best_deal":true,"screen_size":55,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":null},
+    {"platform":"Kilimall","name":"Hisense 55A7200F 4K UHD","price_ksh":51000,"old_price_ksh":null,"rating":null,"discount_pct":null,"is_best_deal":false,"screen_size":55,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":null},
+    {"platform":"Jumia","name":"Hisense 55E7KQ Pro QLED MiniLED","price_ksh":74999,"old_price_ksh":95000,"rating":4.8,"discount_pct":21.1,"is_best_deal":true,"screen_size":55,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":null},
+    {"platform":"Kilimall","name":"Hisense 55E7KQ QLED TV","price_ksh":79500,"old_price_ksh":90000,"rating":null,"discount_pct":11.7,"is_best_deal":false,"screen_size":55,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":null},
+    {"platform":"Jumia","name":"Hisense 65U7H ULED 4K 144Hz","price_ksh":84999,"old_price_ksh":110000,"rating":4.7,"discount_pct":22.7,"is_best_deal":true,"screen_size":65,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":null},
+    {"platform":"Kilimall","name":"Hisense 65U7H ULED TV","price_ksh":91000,"old_price_ksh":105000,"rating":null,"discount_pct":13.3,"is_best_deal":false,"screen_size":65,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":null}
+  ]
+}

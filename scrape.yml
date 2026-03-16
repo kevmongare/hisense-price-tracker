@@ -1,0 +1,33 @@
+name: Daily Hisense Price Scrape
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # Every day at 7:00 AM UTC (10 AM EAT)
+  workflow_dispatch:       # Also allows manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 fake-useragent
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/hisense.json
+          git diff --staged --quiet || git commit -m "chore: update Hisense TV prices $(date +'%Y-%m-%d')"
+          git push
