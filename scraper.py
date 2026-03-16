@@ -180,6 +180,30 @@ def scrape_kilimall(query="hisense television", pages=3):
     return results
 
 # ── Transform ──────────────────────────────────────────────
+def infer_tv_type(name):
+    n = name.lower()
+    if "google tv" in n:  return "Google TV"
+    if "android" in n:    return "Android TV"
+    if "smart" in n:      return "Smart TV"
+    if "digital" in n:    return "Digital TV"
+    return "Smart TV"
+
+def infer_features(name):
+    n = name.lower()
+    feats = []
+    if "4k" in n or "uhd" in n:   feats.append("4K UHD")
+    if "qled" in n:                feats.append("QLED")
+    if "uled" in n:                feats.append("ULED")
+    if "miniled" in n:             feats.append("MiniLED")
+    if "144hz" in n:               feats.append("144Hz")
+    if "120hz" in n:               feats.append("120Hz")
+    if "dolby" in n:               feats.append("Dolby Vision")
+    if "android" in n:             feats.append("Google Play")
+    if "google tv" in n:           feats.append("Google Assistant")
+    if "fhd" in n or "1080" in n:  feats.append("FHD 1080p")
+    if "hd" in n and "4k" not in n and "fhd" not in n: feats.append("HD Ready")
+    return feats if feats else ["Smart TV", "HDMI", "USB"]
+
 def transform(records):
     for r in records:
         p, old = r.get("price_ksh"), r.get("old_price_ksh")
@@ -187,6 +211,8 @@ def transform(records):
         r["is_best_deal"] = bool(r["discount_pct"] and r["discount_pct"] >= 20)
         m = re.search(r'\b(\d{2})"?\s*(inch)?', r["name"], re.I)
         r["screen_size"] = int(m.group(1)) if m else None
+        r["tv_type"]     = infer_tv_type(r["name"])
+        r["features"]    = infer_features(r["name"])
     return sorted(records, key=lambda x: (not x["is_best_deal"], -(x["discount_pct"] or 0)))
 
 # ── Seed data fallback (shown when scraping is blocked) ────
