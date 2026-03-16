@@ -22,6 +22,8 @@ jobs:
         run: pip install requests beautifulsoup4 fake-useragent
 
       - name: Run scraper
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         run: python scraper.py
 
       - name: Commit updated data
