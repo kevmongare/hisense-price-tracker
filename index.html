@@ -366,12 +366,19 @@ function makeCard(pair, idx) {
     if (!listing) {
       return `<div class="plat-side ${isJumia ? 'plat-side-j' : 'plat-side-k'}">
         <div class="plat-badge ${isJumia ? 'badge-j' : 'badge-k'}">${isJumia ? 'Jumia' : 'Kilimall'}</div>
-        <div style="font-size:12px;color:var(--ts);margin-top:8px">Not listed on this platform</div>
+        <div style="font-size:12px;color:var(--ts);margin-top:10px;line-height:1.6">
+          Not currently listed.<br>
+          <a href="https://www.${isJumia?'jumia.co.ke/catalog/?q=hisense+tv':'kilimall.co.ke/search?q=hisense+tv'}" target="_blank" rel="noopener" style="color:var(--${isJumia?'j':'k'});font-size:11px">Search manually →</a>
+        </div>
       </div>`;
     }
     const cheaper = isJumia ? jCheaper : kCheaper;
+    const tvType  = listing.tv_type || '';
+    const features = listing.features || [];
+    const tvTypeColor = tvType === 'Android TV' ? 'tag-stk' : tvType === 'Google TV' ? 'tag-del' : 'tag-f';
     return `<div class="plat-side ${isJumia ? 'plat-side-j' : 'plat-side-k'}">
       <div class="plat-badge ${isJumia ? 'badge-j' : 'badge-k'}">${isJumia ? 'Jumia' : 'Kilimall'}</div>
+      ${tvType ? `<div style="margin-bottom:8px"><span class="tag ${tvTypeColor}" style="font-size:11px;padding:3px 8px">${tvType}</span></div>` : ''}
       <div>
         <span class="price-main">KSh ${listing.price_ksh.toLocaleString()}</span>
         ${listing.old_price_ksh ? `<span class="price-old">KSh ${listing.old_price_ksh.toLocaleString()}</span>` : ''}
@@ -379,10 +386,7 @@ function makeCard(pair, idx) {
       ${listing.discount_pct ? `<div class="disc-pill">${listing.discount_pct}% off</div>` : ''}
       ${cheaper ? `<div class="cheaper-banner">Cheaper by KSh ${saving.toLocaleString()}</div>` : ''}
       <div class="rating-row">${starsHtml(listing.rating)}</div>
-      <div class="plat-tags" style="margin-top:8px">
-        <span class="tag tag-del">${isJumia ? 'Free delivery' : 'KSh 350 delivery'}</span>
-        <span class="tag ${listing.price_ksh ? 'tag-stk' : 'tag-oos'}">${listing.price_ksh ? 'In stock' : 'Check stock'}</span>
-      </div>
+      ${features.length ? `<div class="plat-tags" style="margin-top:8px">${features.map(f=>`<span class="tag tag-f" style="font-size:10px">${f}</span>`).join('')}</div>` : ''}
     </div>`;
   }
 
