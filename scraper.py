@@ -180,53 +180,65 @@ def scrape_kilimall(query="hisense television", pages=3):
     return results
 
 # ── Transform ──────────────────────────────────────────────
-def infer_tv_type(name):
-    n = name.lower()
-    if "google tv" in n:  return "Google TV"
-    if "android" in n:    return "Android TV"
-    if "smart" in n:      return "Smart TV"
-    if "digital" in n:    return "Digital TV"
-    return "Smart TV"
 
-def infer_features(name):
-    n = name.lower()
-    feats = []
-    if "4k" in n or "uhd" in n:   feats.append("4K UHD")
-    if "qled" in n:                feats.append("QLED")
-    if "uled" in n:                feats.append("ULED")
-    if "miniled" in n:             feats.append("MiniLED")
-    if "144hz" in n:               feats.append("144Hz")
-    if "120hz" in n:               feats.append("120Hz")
-    if "dolby" in n:               feats.append("Dolby Vision")
-    if "android" in n:             feats.append("Google Play")
-    if "google tv" in n:           feats.append("Google Assistant")
-    if "fhd" in n or "1080" in n:  feats.append("FHD 1080p")
-    if "hd" in n and "4k" not in n and "fhd" not in n: feats.append("HD Ready")
-    return feats if feats else ["Smart TV", "HDMI", "USB"]
+def clean_name(raw):
+    """
+    Strip everything after the core model code.
+    Input:  'Hisense 32" Inch Frameless FHD SMART TV,Netflix,WIFI,INBUILT DECODER+TV GUARD'
+    Output: 'Hisense 32A4G'  (or best short form we can extract)
+    """
+    # Extract size
+    size_m = re.search(r'(\d{2})"?\s*(?:inch)?', raw, re.I)
+    size   = size_m.group(1) if size_m else ''
+
+    # Extract model code — alphanumeric token after the size e.g. A4G, E57KQ, U7H
+    code_m = re.search(r'\b([A-Z]\d+[A-Z0-9]*)\b', raw)
+    code   = code_m.group(1) if code_m else ''
+
+    if size and code:
+        return f"Hisense {size}{code}"
+    if size:
+        # Fallback: use size + first meaningful word
+        words = re.split(r'[\s,+]+', raw)
+        label = next((w for w in words if w.upper() in
+                      ['FHD','UHD','QLED','ULED','4K','HD','SMART','ANDROID']), '')
+        return f"Hisense {size}\" {label}".strip()
+    # Last resort — first 20 chars
+    return raw[:20].strip()
+
+def make_model_key(name, size):
+    """Generate a stable lowercase key for grouping Jumia + Kilimall listings."""
+    code_m = re.search(r'([A-Z]\d+[A-Z0-9]*)', name)
+    code   = code_m.group(1).lower() if code_m else re.sub(r'[^a-z0-9]', '_', name.lower())[:10]
+    return f"hisense_{size}_{code}" if size else f"hisense_{code}"
 
 def transform(records):
     for r in records:
-        p, old = r.get("price_ksh"), r.get("old_price_ksh")
-        r["discount_pct"] = round((old - p) / old * 100, 1) if old and p and old > p else None
-        r["is_best_deal"] = bool(r["discount_pct"] and r["discount_pct"] >= 20)
-        m = re.search(r'\b(\d{2})"?\s*(inch)?', r["name"], re.I)
-        r["screen_size"] = int(m.group(1)) if m else None
-        r["tv_type"]     = infer_tv_type(r["name"])
-        r["features"]    = infer_features(r["name"])
+        r["name"]      = clean_name(r["name"])          # shorten messy product title
+        p, old         = r.get("price_ksh"), r.get("old_price_ksh")
+        r["discount_pct"]  = round((old - p) / old * 100, 1) if old and p and old > p else None
+        r["is_best_deal"]  = bool(r["discount_pct"] and r["discount_pct"] >= 20)
+        m              = re.search(r'\b(\d{2})"?\s*(inch)?', r["name"], re.I)
+        r["screen_size"]   = int(m.group(1)) if m else None
+        r["model_key"]     = make_model_key(r["name"], r["screen_size"])
     return sorted(records, key=lambda x: (not x["is_best_deal"], -(x["discount_pct"] or 0)))
 
 # ── Seed data fallback (shown when scraping is blocked) ────
 SEED_LISTINGS = [
-    {"platform":"Jumia",    "name":"Hisense 32A4G HD Ready Smart TV","price_ksh":21999,"old_price_ksh":26999,"rating":4.3,"discount_pct":18.5,"is_best_deal":False,"screen_size":32,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":None},
-    {"platform":"Kilimall", "name":"Hisense 32A4K Smart TV",         "price_ksh":18999,"old_price_ksh":22000,"rating":None,"discount_pct":13.6,"is_best_deal":False,"screen_size":32,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":None},
-    {"platform":"Jumia",    "name":"Hisense 43A5800FW FHD Android TV","price_ksh":34999,"old_price_ksh":42000,"rating":4.5,"discount_pct":16.7,"is_best_deal":False,"screen_size":43,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":None},
-    {"platform":"Kilimall", "name":"Hisense 43E57KQ QLED 4K Google TV","price_ksh":38500,"old_price_ksh":44000,"rating":None,"discount_pct":12.5,"is_best_deal":False,"screen_size":43,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":None},
-    {"platform":"Jumia",    "name":"Hisense 55A7200F 4K UHD Smart TV","price_ksh":44999,"old_price_ksh":62500,"rating":4.6,"discount_pct":28.0,"is_best_deal":True, "screen_size":55,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":None},
-    {"platform":"Kilimall", "name":"Hisense 55A7200F 4K UHD",        "price_ksh":51000,"old_price_ksh":None, "rating":None,"discount_pct":None,"is_best_deal":False,"screen_size":55,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":None},
-    {"platform":"Jumia",    "name":"Hisense 55E7KQ Pro QLED MiniLED","price_ksh":74999,"old_price_ksh":95000,"rating":4.8,"discount_pct":21.1,"is_best_deal":True, "screen_size":55,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":None},
-    {"platform":"Kilimall", "name":"Hisense 55E7KQ QLED TV",         "price_ksh":79500,"old_price_ksh":90000,"rating":None,"discount_pct":11.7,"is_best_deal":False,"screen_size":55,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":None},
-    {"platform":"Jumia",    "name":"Hisense 65U7H ULED 4K 144Hz",    "price_ksh":84999,"old_price_ksh":110000,"rating":4.7,"discount_pct":22.7,"is_best_deal":True, "screen_size":65,"url":"https://www.jumia.co.ke/catalog/?q=hisense+tv","image":None},
-    {"platform":"Kilimall", "name":"Hisense 65U7H ULED TV",          "price_ksh":91000,"old_price_ksh":105000,"rating":None,"discount_pct":13.3,"is_best_deal":False,"screen_size":65,"url":"https://www.kilimall.co.ke/search?q=hisense+tv","image":None},
+    {"platform":"Jumia",    "model_key":"hisense_32_a4g", "name":"Hisense 32A4G",   "price_ksh":21999,"old_price_ksh":26999,"rating":4.3,"discount_pct":18.5,"is_best_deal":False,"screen_size":32,"url":"https://www.jumia.co.ke/catalog/?q=hisense+32+tv"},
+    {"platform":"Kilimall", "model_key":"hisense_32_a4g", "name":"Hisense 32A4G",   "price_ksh":19999,"old_price_ksh":23500,"rating":4.1,"discount_pct":14.9,"is_best_deal":False,"screen_size":32,"url":"https://www.kilimall.co.ke/search?q=hisense+32+tv"},
+    {"platform":"Jumia",    "model_key":"hisense_32_a4k", "name":"Hisense 32A4K",   "price_ksh":20999,"old_price_ksh":24999,"rating":4.2,"discount_pct":16.0,"is_best_deal":False,"screen_size":32,"url":"https://www.jumia.co.ke/catalog/?q=hisense+32+tv"},
+    {"platform":"Kilimall", "model_key":"hisense_32_a4k", "name":"Hisense 32A4K",   "price_ksh":18999,"old_price_ksh":22000,"rating":4.0,"discount_pct":13.6,"is_best_deal":False,"screen_size":32,"url":"https://www.kilimall.co.ke/search?q=hisense+32+tv"},
+    {"platform":"Jumia",    "model_key":"hisense_43_a58", "name":"Hisense 43A5800", "price_ksh":34999,"old_price_ksh":42000,"rating":4.5,"discount_pct":16.7,"is_best_deal":False,"screen_size":43,"url":"https://www.jumia.co.ke/catalog/?q=hisense+43+tv"},
+    {"platform":"Kilimall", "model_key":"hisense_43_a58", "name":"Hisense 43A5800", "price_ksh":33500,"old_price_ksh":38000,"rating":4.2,"discount_pct":11.8,"is_best_deal":False,"screen_size":43,"url":"https://www.kilimall.co.ke/search?q=hisense+43+tv"},
+    {"platform":"Jumia",    "model_key":"hisense_43_e57", "name":"Hisense 43E57KQ", "price_ksh":39999,"old_price_ksh":48000,"rating":4.4,"discount_pct":16.7,"is_best_deal":False,"screen_size":43,"url":"https://www.jumia.co.ke/catalog/?q=hisense+43+tv"},
+    {"platform":"Kilimall", "model_key":"hisense_43_e57", "name":"Hisense 43E57KQ", "price_ksh":38500,"old_price_ksh":44000,"rating":4.1,"discount_pct":12.5,"is_best_deal":False,"screen_size":43,"url":"https://www.kilimall.co.ke/search?q=hisense+43+tv"},
+    {"platform":"Jumia",    "model_key":"hisense_55_a72", "name":"Hisense 55A7200F","price_ksh":44999,"old_price_ksh":62500,"rating":4.6,"discount_pct":28.0,"is_best_deal":True, "screen_size":55,"url":"https://www.jumia.co.ke/catalog/?q=hisense+55+tv"},
+    {"platform":"Kilimall", "model_key":"hisense_55_a72", "name":"Hisense 55A7200F","price_ksh":51000,"old_price_ksh":58000,"rating":4.4,"discount_pct":12.1,"is_best_deal":False,"screen_size":55,"url":"https://www.kilimall.co.ke/search?q=hisense+55+tv"},
+    {"platform":"Jumia",    "model_key":"hisense_55_e7k", "name":"Hisense 55E7KQ",  "price_ksh":74999,"old_price_ksh":95000,"rating":4.8,"discount_pct":21.1,"is_best_deal":True, "screen_size":55,"url":"https://www.jumia.co.ke/catalog/?q=hisense+55+tv"},
+    {"platform":"Kilimall", "model_key":"hisense_55_e7k", "name":"Hisense 55E7KQ",  "price_ksh":79500,"old_price_ksh":90000,"rating":4.5,"discount_pct":11.7,"is_best_deal":False,"screen_size":55,"url":"https://www.kilimall.co.ke/search?q=hisense+55+tv"},
+    {"platform":"Jumia",    "model_key":"hisense_65_u7h", "name":"Hisense 65U7H",   "price_ksh":84999,"old_price_ksh":110000,"rating":4.7,"discount_pct":22.7,"is_best_deal":True, "screen_size":65,"url":"https://www.jumia.co.ke/catalog/?q=hisense+65+tv"},
+    {"platform":"Kilimall", "model_key":"hisense_65_u7h", "name":"Hisense 65U7H",   "price_ksh":91000,"old_price_ksh":105000,"rating":4.3,"discount_pct":13.3,"is_best_deal":False,"screen_size":65,"url":"https://www.kilimall.co.ke/search?q=hisense+65+tv"},
 ]
 
 # ── Main pipeline ──────────────────────────────────────────
