@@ -1,24 +1,11 @@
 {
-  "scraped_at": "2026-03-25T06:52:21.745932+00:00",
+  "scraped_at": "2026-03-26T06:58:10.222484+00:00",
   "total": 228,
   "jumia_count": 120,
   "kilimall_count": 108,
   "live_scrape": true,
   "note": "",
   "listings": [
-    {
-      "platform": "Jumia",
-      "name": "Hisense 32\" FHD",
-      "price_ksh": 14599,
-      "old_price_ksh": 40000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-32-inch-frameless-fhd-smart-tvnetflixwifiinbuilt-decodertv-guardbracket-186213571.html",
-      "image": null,
-      "discount_pct": 63.5,
-      "is_best_deal": true,
-      "screen_size": 32,
-      "model_key": "hisense_32_hisense_32"
-    },
     {
       "platform": "Jumia",
       "name": "Hisense 32\" Smart",
@@ -28,6 +15,19 @@
       "url": "https://www.jumia.co.ke/hisense-32-inch-32a4h-vidaa-os-led-frameless-smart-tvelevisionextensionbracket-186220560.html",
       "image": null,
       "discount_pct": 63.0,
+      "is_best_deal": true,
+      "screen_size": 32,
+      "model_key": "hisense_32_hisense_32"
+    },
+    {
+      "platform": "Jumia",
+      "name": "Hisense 32\" FHD",
+      "price_ksh": 14999,
+      "old_price_ksh": 40000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-32-inch-frameless-fhd-smart-tvnetflixwifiinbuilt-decodertv-guardbracket-186213571.html",
+      "image": null,
+      "discount_pct": 62.5,
       "is_best_deal": true,
       "screen_size": 32,
       "model_key": "hisense_32_hisense_32"
@@ -48,12 +48,12 @@
     {
       "platform": "Jumia",
       "name": "Hisense 32A4",
-      "price_ksh": 14989,
+      "price_ksh": 14999,
       "old_price_ksh": 38000,
       "rating": null,
       "url": "https://www.jumia.co.ke/a4-32-inch-frameless-fhd-smart-tv-netflix-inbuilt-decoder2-years-warranty-hisense-mpg1777277.html",
       "image": null,
-      "discount_pct": 60.6,
+      "discount_pct": 60.5,
       "is_best_deal": true,
       "screen_size": 32,
       "model_key": "hisense_32_a4"
@@ -112,6 +112,19 @@
     },
     {
       "platform": "Jumia",
+      "name": "Hisense 32\" Smart",
+      "price_ksh": 14890,
+      "old_price_ksh": 37000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/customer/account/login/?tkWl=HI200EA2R2N8DNAFAMZ-196808570&return=%2Fcatalog%2F%3Fq%3Dhisense%2Btv%26page%3D3",
+      "image": null,
+      "discount_pct": 59.8,
+      "is_best_deal": true,
+      "screen_size": 32,
+      "model_key": "hisense_32_hisense_32"
+    },
+    {
+      "platform": "Jumia",
       "name": "Hisense Smart Tv Rem",
       "price_ksh": 550,
       "old_price_ksh": 1350,
@@ -135,19 +148,6 @@
       "is_best_deal": true,
       "screen_size": 55,
       "model_key": "hisense_55_hisense_55"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 43\" Smart",
-      "price_ksh": 24590,
-      "old_price_ksh": 60000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-43-inch-smart-fhd-framelesssmart-digital-led-televisionbracketguard-169353022.html",
-      "image": null,
-      "discount_pct": 59.0,
-      "is_best_deal": true,
-      "screen_size": 43,
-      "model_key": "hisense_43_hisense_43"
     },
     {
       "platform": "Jumia",
@@ -177,26 +177,26 @@
     },
     {
       "platform": "Jumia",
-      "name": "Hisense 32A4K",
-      "price_ksh": 14890,
-      "old_price_ksh": 36000,
+      "name": "Hisense 43\" Smart",
+      "price_ksh": 24890,
+      "old_price_ksh": 60000,
       "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-32-inches-a4k-series-smart-tvfull-hd-dolby-audio-built-in-wi-fi-netflix-youtube-hdmi-usbfree-gifts-317153115.html",
+      "url": "https://www.jumia.co.ke/hisense-43-inch-smart-fhd-framelesssmart-digital-led-televisionbracketguard-169353022.html",
       "image": null,
-      "discount_pct": 58.6,
+      "discount_pct": 58.5,
       "is_best_deal": true,
-      "screen_size": 32,
-      "model_key": "hisense_32_a4k"
+      "screen_size": 43,
+      "model_key": "hisense_43_hisense_43"
     },
     {
       "platform": "Jumia",
       "name": "Hisense 32\" SMART",
-      "price_ksh": 14979,
+      "price_ksh": 14999,
       "old_price_ksh": 36000,
       "rating": null,
       "url": "https://www.jumia.co.ke/hisense-32-inch-vidaa-smart-tvnetflixwifi-built-infree-brackettv-guard-284003129.html",
       "image": null,
-      "discount_pct": 58.4,
+      "discount_pct": 58.3,
       "is_best_deal": true,
       "screen_size": 32,
       "model_key": "hisense_32_hisense_32"
@@ -230,7 +230,20 @@
     {
       "platform": "Jumia",
       "name": "Hisense 55\" Smart",
-      "price_ksh": 43880,
+      "price_ksh": 43890,
+      "old_price_ksh": 100000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-55-inchsmart-tvvidaa-os-bluetoothtv-guard-bracket2-years-warranty-222088194.html",
+      "image": null,
+      "discount_pct": 56.1,
+      "is_best_deal": true,
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
+    },
+    {
+      "platform": "Jumia",
+      "name": "Hisense 55\" Smart",
+      "price_ksh": 43890,
       "old_price_ksh": 100000,
       "rating": null,
       "url": "https://www.jumia.co.ke/hisense-55-inchsmart-tvvidaa-os-bluetoothtv-guard-bracket2-years-warranty-222088194.html",
@@ -281,8 +294,21 @@
     },
     {
       "platform": "Jumia",
+      "name": "Hisense 43\" UHD",
+      "price_ksh": 32999,
+      "old_price_ksh": 70000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-43-inch-uhd-4k-qled-dolby-vision-smart-tvbluetooth-enablednetflixyoutube-free-gifts-325303387.html",
+      "image": null,
+      "discount_pct": 52.9,
+      "is_best_deal": true,
+      "screen_size": 43,
+      "model_key": "hisense_43_hisense_43"
+    },
+    {
+      "platform": "Jumia",
       "name": "Hisense 65\" UHD",
-      "price_ksh": 70880,
+      "price_ksh": 70890,
       "old_price_ksh": 150000,
       "rating": null,
       "url": "https://www.jumia.co.ke/hisense-65-inchframelessuhd-4ksmartvidaa-osbluetoothnetflixyoutubewall-bracket-275241826.html",
@@ -334,7 +360,7 @@
     {
       "platform": "Jumia",
       "name": "Hisense 43A6K",
-      "price_ksh": 28989,
+      "price_ksh": 28999,
       "old_price_ksh": 60000,
       "rating": null,
       "url": "https://www.jumia.co.ke/hisense-a6k-43-inch-uhd-frameless-smartbluetooth-tv-inbuiltdecodertv-guardbracket-250494126.html",
@@ -360,7 +386,7 @@
     {
       "platform": "Jumia",
       "name": "Hisense 43A6",
-      "price_ksh": 28980,
+      "price_ksh": 28990,
       "old_price_ksh": 60000,
       "rating": null,
       "url": "https://www.jumia.co.ke/hisense-43-inch-2025-modela6-series-4k-uhd-smart-vidaa-tv-dolby-vision-hdr-dts-virtual-x-sports-game-modesfree-gifts-314993293.html",
@@ -398,8 +424,21 @@
     },
     {
       "platform": "Jumia",
+      "name": "Hisense 43A6N",
+      "price_ksh": 28990,
+      "old_price_ksh": 60000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-43-inch-a6n-4k-uhd-smart-tv-with-hdr-dolby-audio-2025-modelfree-tv-power-guard2yrs-warranty-314992540.html",
+      "image": null,
+      "discount_pct": 51.7,
+      "is_best_deal": true,
+      "screen_size": 43,
+      "model_key": "hisense_43_a6n"
+    },
+    {
+      "platform": "Jumia",
       "name": "Hisense 43A6",
-      "price_ksh": 28980,
+      "price_ksh": 28990,
       "old_price_ksh": 60000,
       "rating": null,
       "url": "https://www.jumia.co.ke/hisense-43-inch-2025-modela6-series-4k-uhd-smart-vidaa-tv-dolby-vision-hdr-dts-virtual-x-sports-game-modesfree-gifts-314993293.html",
@@ -408,6 +447,19 @@
       "is_best_deal": true,
       "screen_size": 43,
       "model_key": "hisense_43_a6"
+    },
+    {
+      "platform": "Jumia",
+      "name": "Hisense 43\" Smart",
+      "price_ksh": 28990,
+      "old_price_ksh": 60000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-43a6n-43-inch-frameless-smart-led-tv-uhd-4k-dolby-audiohdmiusb-portsbuilt-in-wifi2025-modelfree-gifts-314991128.html",
+      "image": null,
+      "discount_pct": 51.7,
+      "is_best_deal": true,
+      "screen_size": 43,
+      "model_key": "hisense_43_hisense_43"
     },
     {
       "platform": "Jumia",
@@ -463,24 +515,11 @@
     },
     {
       "platform": "Jumia",
-      "name": "Hisense 32A4",
-      "price_ksh": 13187,
-      "old_price_ksh": 25000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-32-inch-a4-smart-tv-hd-new-model-black-2yrs-wrty-326946122.html",
-      "image": null,
-      "discount_pct": 47.3,
-      "is_best_deal": true,
-      "screen_size": 32,
-      "model_key": "hisense_32_a4"
-    },
-    {
-      "platform": "Jumia",
       "name": "Hisense 32\" Smart",
       "price_ksh": 14795,
       "old_price_ksh": 27000,
       "rating": null,
-      "url": "https://www.jumia.co.ke/customer/account/login/?tkWl=HI200EA1N1W1ZNAFAMZ-46376253&return=%2Fcatalog%2F%3Fq%3Dhisense%2Btv%26page%3D2",
+      "url": "https://www.jumia.co.ke/customer/account/login/?tkWl=HI200EA1N1W1ZNAFAMZ-46376253&return=%2Fcatalog%2F%3Fq%3Dhisense%2Btv%26page%3D1",
       "image": null,
       "discount_pct": 45.2,
       "is_best_deal": true,
@@ -567,6 +606,19 @@
     },
     {
       "platform": "Jumia",
+      "name": "Hisense 55A6",
+      "price_ksh": 41985,
+      "old_price_ksh": 71000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-55-inch-55a6-ultra-hd-4k-tv-frameless-smart-tv-vidaa-smart-os-television-bluetooth-enableda6-seriesnetflixyoutube-a-panelinbuilt-decoder-25-months-warrantyfree-tilt-wall-mounting-bracket-327050795.html",
+      "image": null,
+      "discount_pct": 40.9,
+      "is_best_deal": true,
+      "screen_size": 55,
+      "model_key": "hisense_55_a6"
+    },
+    {
+      "platform": "Jumia",
       "name": "Hisense 32\" Smart",
       "price_ksh": 14895,
       "old_price_ksh": 25000,
@@ -616,19 +668,6 @@
       "is_best_deal": true,
       "screen_size": 32,
       "model_key": "hisense_32_a4"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 32\" Smart",
-      "price_ksh": 14895,
-      "old_price_ksh": 25000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/customer/account/login/?tkWl=HI200EA0AWFA2NAFAMZ-58973981&return=%2Fcatalog%2F%3Fq%3Dhisense%2Btv%26page%3D3",
-      "image": null,
-      "discount_pct": 40.4,
-      "is_best_deal": true,
-      "screen_size": 32,
-      "model_key": "hisense_32_hisense_32"
     },
     {
       "platform": "Jumia",
@@ -711,6 +750,19 @@
     {
       "platform": "Jumia",
       "name": "Hisense 32\" Smart",
+      "price_ksh": 14999,
+      "old_price_ksh": 25000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/customer/account/login/?tkWl=HI200EA172CNDNAFAMZ-51567221&return=%2Fcatalog%2F%3Fq%3Dhisense%2Btv%26page%3D3",
+      "image": null,
+      "discount_pct": 40.0,
+      "is_best_deal": true,
+      "screen_size": 32,
+      "model_key": "hisense_32_hisense_32"
+    },
+    {
+      "platform": "Jumia",
+      "name": "Hisense 32\" Smart",
       "price_ksh": 14995,
       "old_price_ksh": 25000,
       "rating": null,
@@ -749,58 +801,6 @@
     },
     {
       "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21795,
-      "old_price_ksh": 36000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a440-inch-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-os-a-free-wall-mounting-bracketheavy-duty-power-extension-cable-277574766.html",
-      "image": null,
-      "discount_pct": 39.5,
-      "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21895,
-      "old_price_ksh": 36000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a4-40-inches-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-os-277579320.html",
-      "image": null,
-      "discount_pct": 39.2,
-      "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21895,
-      "old_price_ksh": 36000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a4-40-inches-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-os-277579320.html",
-      "image": null,
-      "discount_pct": 39.2,
-      "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21995,
-      "old_price_ksh": 36000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a4-40-inches-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-os-277581866.html",
-      "image": null,
-      "discount_pct": 38.9,
-      "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
-    },
-    {
-      "platform": "Jumia",
       "name": "Hisense 55Q6",
       "price_ksh": 43999,
       "old_price_ksh": 72000,
@@ -827,68 +827,29 @@
     },
     {
       "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21695,
-      "old_price_ksh": 35000,
+      "name": "Hisense 55\" Smart",
+      "price_ksh": 42996,
+      "old_price_ksh": 69000,
       "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a440inches-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-os-277575749.html",
+      "url": "https://www.jumia.co.ke/hisense-55-inch-smart-uhd-4k-frameless-led-tv-youtube-netflix-black-1-year-warranty-309514547.html",
       "image": null,
-      "discount_pct": 38.0,
+      "discount_pct": 37.7,
       "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
     },
     {
       "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21995,
-      "old_price_ksh": 35000,
+      "name": "Hisense 55\" Smart",
+      "price_ksh": 43500,
+      "old_price_ksh": 69000,
       "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a4-40inch-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-osfree-tv-guard-wall-mounting-bracket-277576719.html",
+      "url": "https://www.jumia.co.ke/customer/account/login/?tkWl=HI200EA5L83JGNAFAMZ-464739035&return=%2Fcatalog%2F%3Fq%3Dhisense%2Btv%26page%3D3",
       "image": null,
-      "discount_pct": 37.2,
+      "discount_pct": 37.0,
       "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21995,
-      "old_price_ksh": 35000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a440-inch-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-os-a-free-tv-guard-heavy-duty-power-extension-cable-277578313.html",
-      "image": null,
-      "discount_pct": 37.2,
-      "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21995,
-      "old_price_ksh": 35000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a440-inch-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-os-277574105.html",
-      "image": null,
-      "discount_pct": 37.2,
-      "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 40A4K",
-      "price_ksh": 21995,
-      "old_price_ksh": 35000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-40a4-40inch-frameless-smart-television-full-hd-resolution-a4k-series-netflix-youtube-tvdts-inbuilt-decoder-built-in-wifividaa-osfree-tv-guard-wall-mounting-bracket-277576719.html",
-      "image": null,
-      "discount_pct": 37.2,
-      "is_best_deal": true,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4k"
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
     },
     {
       "platform": "Jumia",
@@ -1074,6 +1035,19 @@
     },
     {
       "platform": "Jumia",
+      "name": "Hisense 55\" 4K",
+      "price_ksh": 43999,
+      "old_price_ksh": 65000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-55-inch-4k-ultra-hd-smart-tv-netflix-bluetooth-2024-model-plus-free-wall-bracket-306368652.html",
+      "image": null,
+      "discount_pct": 32.3,
+      "is_best_deal": true,
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
+    },
+    {
+      "platform": "Jumia",
       "name": "Hisense 43A4K",
       "price_ksh": 25795,
       "old_price_ksh": 38000,
@@ -1217,11 +1191,24 @@
     },
     {
       "platform": "Jumia",
+      "name": "Hisense 65\" QLED",
+      "price_ksh": 71898,
+      "old_price_ksh": 100000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-65-inch-qled-ultra-hd-4k-smart-65q-series-tv2025-model2yrs-warranty-326282774.html",
+      "image": null,
+      "discount_pct": 28.1,
+      "is_best_deal": true,
+      "screen_size": 65,
+      "model_key": "hisense_65_hisense_65"
+    },
+    {
+      "platform": "Jumia",
       "name": "Hisense 32A4",
       "price_ksh": 14495,
       "old_price_ksh": 20000,
       "rating": null,
-      "url": "https://www.jumia.co.ke/customer/account/login/?tkWl=HI200EA0NKQFANAFAMZ-56236325&return=%2Fcatalog%2F%3Fq%3Dhisense%2Btv%26page%3D2",
+      "url": "https://www.jumia.co.ke/customer/account/login/?tkWl=HI200EA0NKQFANAFAMZ-56236325&return=%2Fcatalog%2F%3Fq%3Dhisense%2Btv%26page%3D1",
       "image": null,
       "discount_pct": 27.5,
       "is_best_deal": true,
@@ -1321,6 +1308,19 @@
     },
     {
       "platform": "Jumia",
+      "name": "Hisense 55\" 4K",
+      "price_ksh": 49380,
+      "old_price_ksh": 65400,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-55-inch-4k-qled-smart-tvdolby-visionbluetooth-enabled-frameless-model-2025-2-year-warranty-326951926.html",
+      "image": null,
+      "discount_pct": 24.5,
+      "is_best_deal": true,
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
+    },
+    {
+      "platform": "Jumia",
       "name": "Hisense 55U7",
       "price_ksh": 74499,
       "old_price_ksh": 93000,
@@ -1344,19 +1344,6 @@
       "is_best_deal": false,
       "screen_size": 43,
       "model_key": "hisense_43_q6"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 50\" 4K",
-      "price_ksh": 41988,
-      "old_price_ksh": 50000,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-50-inch-frameless-4k-ultra-hd-smart-tv-youtube-netflix-bluetooth-hdr-black-2025-model-1-year-warranty-325615077.html",
-      "image": null,
-      "discount_pct": 16.0,
-      "is_best_deal": false,
-      "screen_size": 50,
-      "model_key": "hisense_50_hisense_50"
     },
     {
       "platform": "Jumia",
@@ -1464,6 +1451,19 @@
     },
     {
       "platform": "Jumia",
+      "name": "Hisense 50\" SMART",
+      "price_ksh": 35695,
+      "old_price_ksh": 40000,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-50a4q-50-inch-smart-tv-televisionvidaa-osdobly-audiohdr-bluetooth-connectivity-wifi2k-full-hd-tvnetflixyoutube2-years-warranty-free-tv-guardwall-bracket-327192498.html",
+      "image": null,
+      "discount_pct": 10.8,
+      "is_best_deal": false,
+      "screen_size": 50,
+      "model_key": "hisense_50_hisense_50"
+    },
+    {
+      "platform": "Jumia",
       "name": "Hisense 43Q6QKEN",
       "price_ksh": 34999,
       "old_price_ksh": 38999,
@@ -1474,6 +1474,19 @@
       "is_best_deal": false,
       "screen_size": 43,
       "model_key": "hisense_43_q6qken"
+    },
+    {
+      "platform": "Jumia",
+      "name": "Hisense 43\" 4K",
+      "price_ksh": 36250,
+      "old_price_ksh": 39999,
+      "rating": null,
+      "url": "https://www.jumia.co.ke/hisense-tv-43-inch-4k-uhd-smart-tv-43a6h-325319389.html",
+      "image": null,
+      "discount_pct": 9.4,
+      "is_best_deal": false,
+      "screen_size": 43,
+      "model_key": "hisense_43_hisense_43"
     },
     {
       "platform": "Jumia",
@@ -1526,19 +1539,6 @@
       "is_best_deal": false,
       "screen_size": 50,
       "model_key": "hisense_50_hisense_50"
-    },
-    {
-      "platform": "Jumia",
-      "name": "Hisense 55\" Smart",
-      "price_ksh": 69000,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.jumia.co.ke/hisense-55-inch-smart-uhd-4k-frameless-led-tv-youtube-netflix-black-1-year-warranty-309514547.html",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 55,
-      "model_key": "hisense_55_hisense_55"
     },
     {
       "platform": "Jumia",
@@ -1634,7 +1634,7 @@
     {
       "platform": "Kilimall",
       "name": "Hisense 55\" UHD",
-      "price_ksh": 43885,
+      "price_ksh": 43585,
       "old_price_ksh": null,
       "rating": null,
       "url": "https://www.kilimall.co.ke/listing/1001090990-Hisense-55-Inch55A6Q-2026-Model-HISENSE-55-INCHFRAMELESSDOLBY-AUDIO-SMARTTelevisionUHD-4KBLUETOOTH-50-CONNECTIVITYWIFI-CONNECTIVITY-INBUILT-DECODERFREE-TV-GUARDWALL-MOUNTING-BRACKET",
@@ -1643,6 +1643,19 @@
       "is_best_deal": false,
       "screen_size": 55,
       "model_key": "hisense_55_hisense_55"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 40A4",
+      "price_ksh": 21995,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/2815449-Hisense-40A4-A4-Series-40-inch-Class-FHD-Smart-TV-with-DTS-Virtual-X-Game-Sports-Modes-VIDAA-Smart-TV-Television-40-Inch-USB-HDMI-VGA-8-FREE-GIFTS",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 40,
+      "model_key": "hisense_40_a4"
     },
     {
       "platform": "Kilimall",
@@ -1672,29 +1685,16 @@
     },
     {
       "platform": "Kilimall",
-      "name": "Hisense 50\" SMART",
-      "price_ksh": 34995,
+      "name": "Hisense 55\" UHD",
+      "price_ksh": 43895,
       "old_price_ksh": null,
       "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1001593384-Hisense-50A4Q-50-2K-Smart-TV",
+      "url": "https://www.kilimall.co.ke/listing/1001091013-Hisense55-Inch55A6Q-2026-Model-HISENSE-55-INCHFRAMELESSDOLBY-AUDIO-SMARTTelevisionUHD-4KBLUETOOTH-50-CONNECTIVITYWIFI-ENABLED-INBUILT-DECODERFREE-TV-GUARD-TILT-WALL-MOUNTING-BRACKET",
       "image": null,
       "discount_pct": null,
       "is_best_deal": false,
-      "screen_size": 50,
-      "model_key": "hisense_50_hisense_50"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 40A4",
-      "price_ksh": 21995,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/2815449-Hisense-40A4-A4-Series-40-inch-Class-FHD-Smart-TV-with-DTS-Virtual-X-Game-Sports-Modes-VIDAA-Smart-TV-Television-40-Inch-USB-HDMI-VGA-8-FREE-GIFTS",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 40,
-      "model_key": "hisense_40_a4"
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
     },
     {
       "platform": "Kilimall",
@@ -1763,6 +1763,32 @@
     },
     {
       "platform": "Kilimall",
+      "name": "Hisense 32\" Smart",
+      "price_ksh": 14795,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/2074092-Hisense-32inch-Smart-TV-with-Netflix-YouTube",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 32,
+      "model_key": "hisense_32_hisense_32"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 50\" SMART",
+      "price_ksh": 34995,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1001593384-Hisense-50A4Q-50-2K-Smart-TV",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 50,
+      "model_key": "hisense_50_hisense_50"
+    },
+    {
+      "platform": "Kilimall",
       "name": "Hisense 43A4K",
       "price_ksh": 26999,
       "old_price_ksh": null,
@@ -1799,19 +1825,6 @@
       "is_best_deal": false,
       "screen_size": 15,
       "model_key": "hisense_15_hisense_15"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 55\" UHD",
-      "price_ksh": 43895,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1001091013-Hisense55-Inch55A6Q-2026-Model-HISENSE-55-INCHFRAMELESSDOLBY-AUDIO-SMARTTelevisionUHD-4KBLUETOOTH-50-CONNECTIVITYWIFI-ENABLED-INBUILT-DECODERFREE-TV-GUARD-TILT-WALL-MOUNTING-BRACKET",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 55,
-      "model_key": "hisense_55_hisense_55"
     },
     {
       "platform": "Kilimall",
@@ -2462,19 +2475,6 @@
       "is_best_deal": false,
       "screen_size": 32,
       "model_key": "hisense_32_a4"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 32\" Smart",
-      "price_ksh": 14795,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/2074092-Hisense-32inch-Smart-TV-with-Netflix-YouTube",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 32,
-      "model_key": "hisense_32_hisense_32"
     },
     {
       "platform": "Kilimall",
