@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-04-10T07:15:49.012858+00:00",
+  "scraped_at": "2026-04-11T06:50:06.342048+00:00",
   "total": 228,
   "jumia_count": 120,
   "kilimall_count": 108,
-  "live_scrape": true,
-  "note": "",
+  "live_scrape": false,
+  "note": "Platforms blocked live scrape — showing last known prices. Add SCRAPER_API_KEY secret for reliable data.",
   "listings": [
     {
       "platform": "Jumia",
