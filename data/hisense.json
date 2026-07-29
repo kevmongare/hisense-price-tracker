@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-28T08:14:12.121195+00:00",
+  "scraped_at": "2026-07-29T08:20:27.622877+00:00",
   "total": 108,
   "jumia_count": 0,
   "kilimall_count": 108,
@@ -47,19 +47,6 @@
     },
     {
       "platform": "Kilimall",
-      "name": "Hisense 32\" Smart",
-      "price_ksh": 16995,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1000336306-HISENSE-32-inch-Smart-TV-32A4-SERIES-VIDAA-OS-Full-HD-FRAMELESS-Television-Inbuilt-WIFI-Dolby-Audio-Inbuilt-Decoder-USBHDMI-PORTS-24-Months-Warranty-HISENSE32-4-EXTRA-GIFTS",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 32,
-      "model_key": "hisense_32_hisense_32"
-    },
-    {
-      "platform": "Kilimall",
       "name": "Hisense 55\" 4K",
       "price_ksh": 46299,
       "old_price_ksh": null,
@@ -70,6 +57,19 @@
       "is_best_deal": false,
       "screen_size": 55,
       "model_key": "hisense_55_hisense_55"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 32\" Smart",
+      "price_ksh": 16995,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1000336306-HISENSE-32-inch-Smart-TV-32A4-SERIES-VIDAA-OS-Full-HD-FRAMELESS-Television-Inbuilt-WIFI-Dolby-Audio-Inbuilt-Decoder-USBHDMI-PORTS-24-Months-Warranty-HISENSE32-4-EXTRA-GIFTS",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 32,
+      "model_key": "hisense_32_hisense_32"
     },
     {
       "platform": "Kilimall",
@@ -174,19 +174,6 @@
       "is_best_deal": false,
       "screen_size": 32,
       "model_key": "hisense_32_hisense_32"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 55\" SMART",
-      "price_ksh": 42995,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1001444144-HISENSE-55-Inch-SMART-TV-Television-4K-UHD-TV55A6-2026-ModelFRAMELESSDOLBY-AUDIO-BLUETOOTH-50-WIFI-ENABLEDINBUILT-DECODER-HISENSE55NETFLIX-YOUTUBEVIDAA-OS-TVDTSFREE-TVGUARDTILT-BRACKET",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 55,
-      "model_key": "hisense_55_hisense_55"
     },
     {
       "platform": "Kilimall",
@@ -307,19 +294,6 @@
     },
     {
       "platform": "Kilimall",
-      "name": "Hisense 32A4",
-      "price_ksh": 15999,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/2464226-Hisense-32A4GKEN-A4-Series32-Inch-Frameless-Smart-TV-NETFLIXYOUTUBE-TELEVISION",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 32,
-      "model_key": "hisense_32_a4"
-    },
-    {
-      "platform": "Kilimall",
       "name": "Hisense 32\" Smart",
       "price_ksh": 16295,
       "old_price_ksh": null,
@@ -330,6 +304,19 @@
       "is_best_deal": false,
       "screen_size": 32,
       "model_key": "hisense_32_hisense_32"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 32A4",
+      "price_ksh": 15595,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1000336320-Hisense-32-inch-Smart-TV-32A4-VIDAA-OS-Full-HD-FRAMELESS-Television-Inbuilt-WIFI-A4-Series-Dobly-Audio-Inbuilt-Decoder-USB-HDMI-24-Months-Warranty-FREE-WALL-MOUNTING-BRACKET-POWER-EXTENSION-CABLE",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 32,
+      "model_key": "hisense_32_a4"
     },
     {
       "platform": "Kilimall",
@@ -382,6 +369,19 @@
       "is_best_deal": false,
       "screen_size": 50,
       "model_key": "hisense_50_hisense_50"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 55\" SMART",
+      "price_ksh": 42995,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1001444144-HISENSE-55-Inch-SMART-TV-Television-4K-UHD-TV55A6-2026-ModelFRAMELESSDOLBY-AUDIO-BLUETOOTH-50-WIFI-ENABLEDINBUILT-DECODER-HISENSE55NETFLIX-YOUTUBEVIDAA-OS-TVDTSFREE-TVGUARDTILT-BRACKET",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
     },
     {
       "platform": "Kilimall",
@@ -490,6 +490,19 @@
     {
       "platform": "Kilimall",
       "name": "Hisense 43\" SMART",
+      "price_ksh": 31695,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1001981067-HISENSE-43-Inch-SMART-TV-4K-ULTRA-HD-LED-TV-43A6-SERIES-BLUETOOTH-ENABLED-TV-WIFI-CONNECTIVITYTELEVISION-HDR-10-Netflix-YouTube-DOLBY-AUDIOVIDAA-OSHISENSE43-2YR-WARRANTY-4-FREE-GIFTS",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 43,
+      "model_key": "hisense_43_hisense_43"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 43\" SMART",
       "price_ksh": 31795,
       "old_price_ksh": null,
       "rating": null,
@@ -507,19 +520,6 @@
       "old_price_ksh": null,
       "rating": null,
       "url": "https://www.kilimall.co.ke/listing/1001008283-HISENSE-43-INCH-FRAMELESS-FHD-SMART-VIDAA-TV-NETFLIX-YOUTUBE-TELEVISION-INBUILT-DECODER-BUILTIN-WIFI-1GBRAM-8GBROM-2USB-PORTS3HDMI6-FREE-GIFTS",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 43,
-      "model_key": "hisense_43_hisense_43"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 43\" SMART",
-      "price_ksh": 31695,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1001981067-HISENSE-43-Inch-SMART-TV-4K-ULTRA-HD-LED-TV-43A6-SERIES-BLUETOOTH-ENABLED-TV-WIFI-CONNECTIVITYTELEVISION-HDR-10-Netflix-YouTube-DOLBY-AUDIOVIDAA-OSHISENSE43-2YR-WARRANTY-4-FREE-GIFTS",
       "image": null,
       "discount_pct": null,
       "is_best_deal": false,
@@ -710,19 +710,6 @@
     },
     {
       "platform": "Kilimall",
-      "name": "Hisense 32\" HD",
-      "price_ksh": 15698,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1002024169-Hisense-32-Inch-TV-HD-Smart-TV-With-Netflix-Youtube-Prime-Video-Dolyby-Audio2025-Model",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 32,
-      "model_key": "hisense_32_hisense_32"
-    },
-    {
-      "platform": "Kilimall",
       "name": "Hisense 32\" Smart",
       "price_ksh": 16895,
       "old_price_ksh": null,
@@ -749,16 +736,16 @@
     },
     {
       "platform": "Kilimall",
-      "name": "Hisense 43A6",
-      "price_ksh": 32999,
+      "name": "Hisense 55\" 4K",
+      "price_ksh": 42999,
       "old_price_ksh": null,
       "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1000234582-Hisense-43-Inch-A6-seriesBLUETOOTH-TV-Smart-ULTRA-HD-4K-HDR-FramelessNetflixYoutube-LED-TVDOLBY-AUDIO6-FREE-GIFTS",
+      "url": "https://www.kilimall.co.ke/listing/2786966-OFFER-Hisense-55-Inch-4K-UHD-HDR-Frameless-Smart-TV-Netflix-You-Tube-2025-TELEVISION",
       "image": null,
       "discount_pct": null,
       "is_best_deal": false,
-      "screen_size": 43,
-      "model_key": "hisense_43_a6"
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
     },
     {
       "platform": "Kilimall",
@@ -827,19 +814,6 @@
     },
     {
       "platform": "Kilimall",
-      "name": "Hisense 55\" 4K",
-      "price_ksh": 42999,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/2786966-OFFER-Hisense-55-Inch-4K-UHD-HDR-Frameless-Smart-TV-Netflix-You-Tube-2025-TELEVISION",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 55,
-      "model_key": "hisense_55_hisense_55"
-    },
-    {
-      "platform": "Kilimall",
       "name": "Hisense 32A4",
       "price_ksh": 15495,
       "old_price_ksh": null,
@@ -876,32 +850,6 @@
       "is_best_deal": false,
       "screen_size": 43,
       "model_key": "hisense_43_hisense_43"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 43A4K",
-      "price_ksh": 25999,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1001104196-TODAY-ONLY-HISENSE-43-InchA4K-FRAMELESSFULL-HDSmart-TVVIDAA-OS-FRAMELESSDOLBY-AUDIONETFLIXYOUTUBE2YEARS-WARRANTY7-FREE-EXTRA-GIFTS",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 43,
-      "model_key": "hisense_43_a4k"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 43A4",
-      "price_ksh": 24899,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1001433141-Hisense-A4-Series-43-Inch-FULL-HD-Smart-VIDAA-TVFRAMELESS-43A4K-2025-New-ModelFREE-6-GIFTS",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 43,
-      "model_key": "hisense_43_a4"
     },
     {
       "platform": "Kilimall",
@@ -983,6 +931,45 @@
     },
     {
       "platform": "Kilimall",
+      "name": "Hisense 43A4K",
+      "price_ksh": 25999,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1001104196-TODAY-ONLY-HISENSE-43-InchA4K-FRAMELESSFULL-HDSmart-TVVIDAA-OS-FRAMELESSDOLBY-AUDIONETFLIXYOUTUBE2YEARS-WARRANTY7-FREE-EXTRA-GIFTS",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 43,
+      "model_key": "hisense_43_a4k"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 32\" HD",
+      "price_ksh": 15698,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1002024169-Hisense-32-Inch-TV-HD-Smart-TV-With-Netflix-Youtube-Prime-Video-Dolyby-Audio2025-Model",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 32,
+      "model_key": "hisense_32_hisense_32"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 43A4",
+      "price_ksh": 24899,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1001433141-Hisense-A4-Series-43-Inch-FULL-HD-Smart-VIDAA-TVFRAMELESS-43A4K-2025-New-ModelFREE-6-GIFTS",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 43,
+      "model_key": "hisense_43_a4"
+    },
+    {
+      "platform": "Kilimall",
       "name": "Hisense 32A4",
       "price_ksh": 17495,
       "old_price_ksh": null,
@@ -1032,19 +1019,6 @@
       "is_best_deal": false,
       "screen_size": 65,
       "model_key": "hisense_65_hisense_65"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 43\" 4K",
-      "price_ksh": 30099,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/1001872214-Hisense-43Q6Q-43-inch-4K-UHD-QLED-Smart-TV-with-Dolby-Vision-Netflix-YouTube-VIDAA-Smart-TV",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 43,
-      "model_key": "hisense_43_hisense_43"
     },
     {
       "platform": "Kilimall",
@@ -1214,19 +1188,6 @@
       "is_best_deal": false,
       "screen_size": 50,
       "model_key": "hisense_50_hisense_50"
-    },
-    {
-      "platform": "Kilimall",
-      "name": "Hisense 32\" Smart",
-      "price_ksh": 14999,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/2464223-Hisense-32A4GKEN-32-Inch-Frameless-Smart-TV-With-Inbuilt-WIFINETFLIXYOUTUBE-TELEVISION",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 32,
-      "model_key": "hisense_32_hisense_32"
     },
     {
       "platform": "Kilimall",
@@ -1409,6 +1370,45 @@
       "is_best_deal": false,
       "screen_size": 43,
       "model_key": "hisense_43_hisense_43"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 55\" SMART",
+      "price_ksh": 42995,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1001090990-HISENSE-55-Inch-SMART-TV-Television-4K-UHD-TV55A6-2026-ModelFRAMELESSDOLBY-AUDIO-BLUETOOTH-50-WIFI-ENABLEDINBUILT-DECODER-HISENSE55NETFLIX-YOUTUBEVIDAA-OS-TVDTSFREE-TVGUARD-WALLBRACKET",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 55,
+      "model_key": "hisense_55_hisense_55"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 75\" 4K",
+      "price_ksh": 105999,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1001974458-Hisense-75Q6Q-75-inch-4K-QUHD-Frameless-Television-VIDAA-Smart-TV-with-Netflix-Youtube-USBSD-Bluetooth-WIFI-Television-Multifuctional-TV",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 75,
+      "model_key": "hisense_75_hisense_75"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 32A4",
+      "price_ksh": 15999,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/1000336311-Hisense-32-inch-Smart-TV-32A4-VIDAA-OS-Full-HD-FRAMELESS-Television-Inbuilt-WIFI-A4-Series-Dolby-Audio-Inbuilt-Decoder-USB-HDMI-24-Months-WarrantyFREE-WALL-MOUNTING-BRACKETHEAVY-DUTY-EXTENSION",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 32,
+      "model_key": "hisense_32_a4"
     }
   ]
 }
