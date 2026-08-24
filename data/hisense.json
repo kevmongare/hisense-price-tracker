@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-23T06:23:47.065888+00:00",
+  "scraped_at": "2026-08-24T06:36:47.255911+00:00",
   "total": 108,
   "jumia_count": 0,
   "kilimall_count": 108,
@@ -606,19 +606,6 @@
     },
     {
       "platform": "Kilimall",
-      "name": "Hisense 43\" Smart",
-      "price_ksh": 29999,
-      "old_price_ksh": null,
-      "rating": null,
-      "url": "https://www.kilimall.co.ke/listing/2955633-Hisense-43A6H-43-Inches-Smart-UHD-4K-HDR-Frameless-LED-TV-2023-TELEVISIONFREE-WALL-BRACKET",
-      "image": null,
-      "discount_pct": null,
-      "is_best_deal": false,
-      "screen_size": 43,
-      "model_key": "hisense_43_hisense_43"
-    },
-    {
-      "platform": "Kilimall",
       "name": "Hisense 50\" SMART",
       "price_ksh": 36995,
       "old_price_ksh": null,
@@ -629,6 +616,19 @@
       "is_best_deal": false,
       "screen_size": 50,
       "model_key": "hisense_50_hisense_50"
+    },
+    {
+      "platform": "Kilimall",
+      "name": "Hisense 43\" Smart",
+      "price_ksh": 29999,
+      "old_price_ksh": null,
+      "rating": null,
+      "url": "https://www.kilimall.co.ke/listing/2955633-Hisense-43A6H-43-Inches-Smart-UHD-4K-HDR-Frameless-LED-TV-2023-TELEVISIONFREE-WALL-BRACKET",
+      "image": null,
+      "discount_pct": null,
+      "is_best_deal": false,
+      "screen_size": 43,
+      "model_key": "hisense_43_hisense_43"
     },
     {
       "platform": "Kilimall",
